@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+    <title>resume</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            
+        }
+        html{
+            scroll-behavior: smooth;
+            scroll-snap-type: proximity;
+        }
+        nav{
+            background-color: #0deb6a;
+            padding: 5px;
+            font-size: 10px;
+            color: rgb(43, 153, 153);
+        }
+        .Nav_list{
+            float: right;
+            display: flex;
+            padding: 10px 20px;
+            line-height: 25px;
+        }
+        .Nav_item{
+            letter-spacing: 25px;
+        }
+        .logo{
+            color: rgb(15, 15, 15);
+            font-size: 30px;
+            line-height: 45px;
+
+        }
+        nav ul a:hover{
+            text-shadow: 0 0 80px rgb(149, 10, 204);
+            text-shadow: 0 0 80px white;
+        }
+        .Sidebare{
+            float: left;
+            width: 30%;
+            height: 130vh; /* only for demonstration, should be removed */
+            background: #0615eb;
+            padding: 20px;
+            
+        }
+        img{
+            border-radius: 120px;
+            padding-top: 15px;
+        }
+        .Sidebare_img{
+            padding-top: 20px;
+            padding-left: 30px;
+            
+        }
+        .Sidebare_list{
+            padding-top: 10px;
+            margin-left: 110px;
+            
+        }
+        .Sidebare_item{
+            padding: 5px 5px;
+        }
+        .Sidebare_footer{
+            padding-top: 100px;
+            padding-left: 15px;
+            color: aliceblue;
+        }
+        .Nav_Name{
+            padding-left: 37px;
+            color: rgb(236, 236, 209);
+            text-shadow: 0 0 10px rgb(15, 255, 175);
+            font-family: 'Bruno Ace SC', cursive;
+            font-family: 'Rye', cursive;
+        }
+        a{color: antiquewhite;}
+        div ul a:hover{
+            color: rgb(196, 230, 9);
+            border-bottom: 2px solid pink;
+        }   
+        /*Main div style*/
+        .Main::after {
+            /* Clear floats after the columns */
+            content: "";
+            display: table;
+            clear: both;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+        }
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            .Nav_item{
+                display: none;
+            }
+        .Sidebare, article {
+            width: 100%;
+            height: auto;
+            
+        }
+        .Sidebare{
+            height: 50%;
+            
+        }
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <span class="logo">SocialMedia</span>
+        <ul class="Nav_list">
+            <li><a class="Nav_item" href=""><i class="fa fa-instagram" style="font-size:20px;color:red"></i></a></li>
+            <li><a class="Nav_item" href=""><i class="fa fa-facebook-f" style="font-size:20px;color:blue"></i></a></li>
+            <li><a class="Nav_item" href=""> <i class="fa fa-linkedin" style="font-size:20px;color:rgb(8, 69, 236);"></i></a></li>
+            <li><a class="Nav_item"href=""><i class="fa fa-github" style="font-size:20px;color:rgb(20, 17, 17)"></i></a></li>
+            <li><a class="Nav_item" href=""><i class="fa fa-google-plus"style="font-size:20px;color:red"></i></a></li>
+        </ul>
+    </nav>
+    <div class="Main">
+        <div class="Sidebare">
+            <span class="Sidebare_img">
+                <img src="image/2.jpg" alt="" height="250px" width="250px">
+            </span>
+            <h1 class="Nav_Name">M.Kanishkaran</h1>
+            <ul class="Sidebare_list">
+                <li class="Sidebare_item"><a href=""><i class="fa fa-home" style="font-size:20px;"> Home</i></a></li>
+                <li class="Sidebare_item"><a href=""><i class="fa fa-newspaper-o" style="font-size:20px"> Summary</i></a></li>
+                <li class="Sidebare_item"><a href=""><i class="fa fa-graduation-cap" style="font-size:20px"> Education</i></a></li>
+                <li class="Sidebare_item"><a href=""><i class="fa fa-drivers-license-o" style="font-size:20px"> Exporience</i></a></li>
+                <li class="Sidebare_item"><a href=""><i class="fa fa-heart" style="font-size:20px;"> About</i></a></li>
+                <li class="Sidebare_item"><a href=""><i class="fa fa-sign-in" style="font-size:20px"> Login</i></a></li>
+            </ul>
+            <footer class="Sidebare_footer">
+                <p>© 2023 Copyright <u>Develope By Kanish</u> </p>
+            </footer>
+        </div>
+        <article>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias. Nulla nisi saepe architecto vel blanditiis libero ipsam nostrum repellat aliquam.</p>
+
+            <h1>Home</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima optio velit libero ipsa reiciendis, repellat quibusdam. Modi, nam molestias.</p>
+            
+        </article>        
+    </div>
+    
+   
+    
+</body>
+</html>
